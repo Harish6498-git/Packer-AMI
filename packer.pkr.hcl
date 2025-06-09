@@ -51,7 +51,7 @@ build {
   sources = ["source.amazon-ebs.frontend"]
 
   provisioner "file" {
-    source      = "app/frontend"
+    source      = "app/client"
     destination = "/tmp/app"
   }
 
