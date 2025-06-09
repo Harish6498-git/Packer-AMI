@@ -7,6 +7,11 @@ packer {
   }
 }
 
+variable "aws_region" {
+  type    = string
+  default = "us-east-2"
+}
+
 source "amazon-ebs" "frontend" {
   region           = var.aws_region
   instance_type    = "t2.micro"
