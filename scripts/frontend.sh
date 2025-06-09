@@ -14,4 +14,6 @@ corepack prepare yarn@stable --activate
 cd /tmp/app
 npm install
 npm run build
+
 sudo cp -r build/* /var/www/html
+sudo systemctl restart apache2
